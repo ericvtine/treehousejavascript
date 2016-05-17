@@ -7,6 +7,7 @@ var correctAnswers = 0;
 var question;
 var answer;
 var response;
+var html;
 
 function print(message) {
   document.write(message);
@@ -15,8 +16,8 @@ function print(message) {
 for (var i = 0; i < questions.length; i += 1) {
   question = questions[i][0];
   answer = questions[i][1];
-  response = prompt(question);
-  response = parseInt(response);
+  response = parseInt(prompt(question));
+
   if (response === answer) {
     correctAnswers += 1;
   } 
